@@ -14,4 +14,13 @@ rotate=degree me lekin only number
 
 note = koi bhi css ki property ke value ko string me our spacial character ko string me 
 
-stagger : 1 karne se ek type ke sare tag ek ek karke chalenge 
+stagger : 1 , karne se ek type ke sare tag ek ek karke chalenge 
+yoyo : true  , tab kam karegi jab appko kisi chiz ko tappa khawakar wapis karna ho repeat me 
+
+
+scrollTrigger :{
+    trigger:"#box2 #box",
+    scroller:"body" (maximum time yahi rahega),
+    markers:true,
+    start : "top 50%"
+}
