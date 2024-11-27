@@ -1,0 +1,43 @@
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+background-color: black;
+color: wheat;
+}
+#box{
+    height: 200px;
+    width: 200px;
+   background-color:  black;
+   border: 1px solid wheat;
+
+
+}
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 20px 40px;
+
+
+}
+.items{
+    display: flex;
+    gap: 30px;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    
+
+}
+.center>h1{
+    font-size: 100px;
+}
