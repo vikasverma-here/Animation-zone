@@ -24,3 +24,9 @@ scrollTrigger :{
     markers:true,
     start : "top 50%"
 }
+
+
+!!! lecture three
+
+svg path curve website
+power easing website
