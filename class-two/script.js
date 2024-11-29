@@ -38,3 +38,34 @@ tl.from(".right img",{
 
     
 })
+
+gsap.from(".course-card",{
+  opacity:0,
+  scale:0,
+  y:100,
+  duration:1,
+scrollTrigger:{
+  trigger:".courses-container .course-card",
+  // markers:true,
+  duration:1,
+  start:"top 60%",
+  end:"top 30%",
+  scrub:2,
+  
+},
+
+
+})
+
+// gsap.from(".courses-section h1",{
+//   opacity:0,
+//   y:-100,
+// scrollTrigger:{
+//   trigger:'.courses-section ',
+//   markers:true,
+//   start:"top 60%",
+//   end:"top 30%",
+//   scrub:2,
+// }  
+
+// })
