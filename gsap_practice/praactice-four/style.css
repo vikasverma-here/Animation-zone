@@ -1,0 +1,68 @@
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664303176738-a426ddd60553?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+   justify-content: space-between;
+   padding: 15px 30px;
+   
+    
+}
+.main h1{
+    color: white;
+    font-size: 40px;
+
+}
+.main i{
+    color: white;
+    font-size: 40px;
+   
+}
+.full{
+    width: 35%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.199);
+    color: white;
+    position: absolute;
+    top: 0%;
+    right: -35%;
+    backdrop-filter: blur(12px);
+
+}
+.full i{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 30px;
+}
+nav {
+  position: relative;
+  top: 15%;
+  
+}
+nav h4{
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+nav button{
+    padding: 10px 25px;
+    font-size: 25px;
+    margin-left:40px ;
+    margin-top: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
