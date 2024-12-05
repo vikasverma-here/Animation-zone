@@ -1,0 +1,156 @@
+@font-face {
+    font-family: first;
+    src: url(./6479b994523a6279a03d4da7_Siaga-Bold.woff2);
+}
+@font-face {
+    font-family: second;
+    src: url(./64eda5e581cb8e58ed55dea5_apercu-medium.woff2);
+}
+@font-face {
+    font-family: third;
+    src: url(./64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
+}
+@font-face {
+    font-family: fourth;
+    src: url(./l);
+}
+@font-face {
+    font-family: fifth;
+    src: url(./l\ \(1\));
+}
+@font-face {
+    font-family: larken;
+    src: url(./LarkenDEMO-Bold.otf);
+}
+
+
+
+* {
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+}
+body{
+    background-color: #E4E4E4;
+}
+.navbar{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    font-family: third ;
+}
+.items{
+    display: flex;
+    gap: 1vw;
+    font-size: 1.2rem;
+    
+}
+.items p{
+    border: 0.01rem solid black;
+    padding: 0.6vw 1.3vw;
+    border-radius: 1rem;
+    transition: ease-in-out 0.3s;
+}
+.items p:hover{
+    background-color: black;
+    color: white;
+}
+.contact{
+    font-weight: 600;
+    text-decoration: underline;
+    
+}
+.n{
+    animation: spin 6s linear infinite;
+}
+
+
+/* !!1! lets build center  */
+
+.center {
+    display: flex;
+    padding:1vw 3vw;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+.left h2{
+    font-family: larken;
+    font-size: 7rem;
+ 
+    line-height: 1;
+}
+.right{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2vw;
+
+}
+.right p{
+    font-family: first;
+}
+
+
+
+button {
+    position: relative;
+    background-color: transparent;
+    border-radius: 1vw;
+ border: none;
+    padding: 1rem 1.4rem;
+    font-size: 16px;
+    cursor: pointer;
+    width: 13vw;
+    outline: none;
+    background-color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+button:hover {
+   border-radius: 1.4rem;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.underline-animation a {
+    position: relative;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 24px;
+    padding-bottom: 5px; /* Creates space for the underline */
+}
+
+.underline-animation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.underline-animation a:hover::after {
+    width: 100%; /* Expands the underline fully */
+}
