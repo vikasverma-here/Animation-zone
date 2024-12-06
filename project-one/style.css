@@ -120,6 +120,8 @@ button {
 
 button:hover {
    border-radius: 1.4rem;
+   
+   
 }
 
 
@@ -132,25 +134,116 @@ button:hover {
     }
 }
 
-.underline-animation a {
+/* !!!! scrolling cart  */
+
+.image-cart{
+    display: flex;
+    /* width: 200vw; */
+    gap: 2rem;
+    padding: 40px 0;
+    transform: translateX(-20%);
+    /* background-color: red; */
+   /* overflow-x: hidden; */
+    
+}
+
+.image-cart img{
+    width: 25%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 100px;
+
+}
+
+/* !!!! text styling  */
+.text{
+    
+    padding: 1vw 3vw;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+
+.bold-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+.bold-text h2{
+    font-family: second;
+    font-size: 8rem;
+    text-transform: capitalize;
+    line-height: 1;
     position: relative;
-    text-decoration: none;
-    color: #3498db;
-    font-size: 24px;
-    padding-bottom: 5px; /* Creates space for the underline */
 }
-
-.underline-animation a::after {
-    content: "";
+.bold-text h2::after{
+    content: "Gotta see 'm all";
+    font-size: 1rem;
+    text-transform: none;
+    background-color: #F4C727;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #3498db;
-    transition: width 0.3s ease-in-out; /* Smooth animation */
+    bottom: -8%;
+    right: 18%;
+    rotate: -10deg;
 }
 
-.underline-animation a:hover::after {
-    width: 100%; /* Expands the underline fully */
+/* !! button */
+
+.button{
+    /* width: 100vh; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vw 3vw;
+
+}
+.button button{
+    border: 1px solid black;
+}
+
+/* !!terras */
+.image-hover{
+    padding: 1vw 3vw;
+    height: 90vh;
+    /* border: 1px solid black; */
+    padding: 1vw 3vw;
+    
+}
+.terras{
+   height: 100%;
+   background-color: red;
+   background-image: url(assets/asset\ 7.jpeg);
+   background-position: center;
+   background-size: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 3vw;
+   transition: ease-in-out 0.5s;
+  
+
+}
+.terras img{
+    height: 15vw;
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+ 
+}
+
+.image-hover:hover .terras img{
+   border-radius: 2rem;
+ opacity: 1;
+}
+
+.image-hover:hover .terras{
+background-size: 110%;
+border-radius: 5vw;
 }
